@@ -1,0 +1,12 @@
+syntax = "proto3";
+package beeust.aaa.aaa;
+
+import "gogoproto/gogo.proto";
+
+option go_package = "github.com/beeust/AAA/x/aaa/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (gogoproto.goproto_stringer) = false;
+  
+}

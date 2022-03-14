@@ -1,0 +1,14 @@
+syntax = "proto3";
+package beeust.aaa.aaa;
+
+import "gogoproto/gogo.proto";
+import "aaa/params.proto";
+// this line is used by starport scaffolding # genesis/proto/import
+
+option go_package = "github.com/beeust/AAA/x/aaa/types";
+
+// GenesisState defines the aaa module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+  // this line is used by starport scaffolding # genesis/proto/state
+}
